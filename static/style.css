@@ -81,7 +81,7 @@ body
 .image-contain img{
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	border-radius: 5px;
 }
 
@@ -127,6 +127,6 @@ body
 .drag-area img{
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	border-radius: 5px;
 }
