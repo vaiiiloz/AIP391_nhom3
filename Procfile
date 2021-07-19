@@ -1,1 +1,1 @@
-web: gunicorn -w :$PORT app: app
+web: gunicorn -w :$5000 app: app
