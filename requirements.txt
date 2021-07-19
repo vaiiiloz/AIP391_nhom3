@@ -10,8 +10,10 @@ pandas==1.2.3
 Flask==1.1.2
 click==7.1.2
 PyYAML==5.3.1
-scipy==1.4.1
 tqdm==4.41.0
 matplotlib==3.2.2
-
+Jinja2==2.11.3
+Werzeug
+MarkupSafe==1.1.1
+itsdangerous==1.1.0
 
