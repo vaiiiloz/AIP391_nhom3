@@ -15,12 +15,12 @@ class EffNetV2(nn.Module):
     
 class Models:
     def __init__(self, detect_model_path = 'best.pt', recog_model_path = 'Eff_anime.pt', num_labels = 1):
-        self.detect_model = torch.hub.load('ultralytics/yolov5', 'custom', path= detect_model_path,map_location=torch.device('cpu'))
+        self.detect_model = torch.hub.load('ultralytics/yolov5', 'custom', path= detect_model_path, force_reload=True)
         
         
         
         self.recog_model = EffNetV2(pretrained = False, labels = num_labels)
-        self.recog_model.load_state_dict(torch.load(recog_model_path))
+        self.recog_model.load_state_dict(torch.load(recog_model_path,map_location=torch.device('cpu')))
         #if torch.cuda.is_available():
         #    self.device = torch.device('cuda:0')
             
