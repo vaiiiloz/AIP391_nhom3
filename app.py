@@ -4,7 +4,6 @@ from werkzeug.utils import secure_filename
 from PIL import Image
 import os
 import sys
-import cv2
 from app_helper import *
 
 app = Flask(__name__)
