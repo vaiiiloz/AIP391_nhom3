@@ -1,6 +1,4 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-
-# base ----------------------------------------
 matplotlib>=3.2.2
 numpy>=1.18.5
 opencv-python>=4.1.2
