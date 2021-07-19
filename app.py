@@ -8,6 +8,8 @@ from app_helper import *
 
 app = Flask(__name__)
 UPLOAD_FOLDER = r'\static\upload'
+if os.path.exists(UPLOAD_FOLDER):
+	os.makedirs(UPLOAD_FOLDER)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route("/")

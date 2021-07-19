@@ -4,6 +4,8 @@ import pandas as pd
 pipe = Pipe()
 outputPath = r"\static\detect"
 df = pd.read_csv('Anime_df.csv',encoding='latin-1')
+if os.path.exists(outputPath):
+	os.makedirs(outputPath)
 def get_image(image_path, img_name):
 	try:
 		img, top1, top5 = pipe.process(image_path)
