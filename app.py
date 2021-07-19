@@ -7,7 +7,7 @@ import sys
 from app_helper import *
 
 app = Flask(__name__)
-UPLOAD_FOLDER = r'C:\Users\Acer\source\repos\Drag and upload\static\upload'
+UPLOAD_FOLDER = r'.\static\upload'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route("/")
