@@ -15,7 +15,7 @@ class EffNetV2(nn.Module):
     
 class Models:
     def __init__(self, detect_model_path = 'best.pt', recog_model_path = 'Eff_anime.pt', num_labels = 1):
-        self.detect_model = torch.hub.load('ultralytics/yolov5', 'custom', path= detect_model_path)
+        self.detect_model = torch.hub.load('ultralytics/yolov5', 'custom', path= detect_model_path,map_location=torch.device('cpu'))
         
         
         
