@@ -25,4 +25,5 @@ def upload_file():
 		return render_template('upload.html', display_detection = filename, fname = filename, info = info)
 
 if __name__ == '__main__':
-   app.run(port=1002, debug=True)
+	port = int(os.environ.get('PORT', 5000))
+	app.run(host='0.0.0.0', port=port, debug=True)
