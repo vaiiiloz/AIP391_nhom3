@@ -20,6 +20,9 @@ def upload_file():
 		f = request.files['file']
 		filename = secure_filename(f.filename)
 		filepath = os.path.join(app.config["UPLOAD_FOLDER"], filename)
+		if not os.path.exists(filepath):
+			with open(filepath, "w+"):
+				pass
 		f.save(filepath)
 		info = get_image(filepath, filename)
 		return render_template('upload.html', display_detection = filename, fname = filename, info = info)
