@@ -21,5 +21,12 @@ class Models:
         
         self.recog_model = EffNetV2(pretrained = False, labels = num_labels)
         self.recog_model.load_state_dict(torch.load(recog_model_path))
+        if torch.cuda.is_available():
+            self.device = torch.device('cuda:0')
+            
+        else:
+            self.device = torch.device('cpu')
+        self.detect_model.to(self.device)
+        self.recog_model.to(self.device)
         
         
