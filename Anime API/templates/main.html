@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <title>Drag and drop</title>
+   <!-- <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
+   <link rel="stylesheet" type = "text/css" href="style.css">
+
+</head>
+<body>
+    <div class = "drag-area">
+        <div class = "icon"><i class = "fas fa-cloud-upload-alt"></i></div>
+        <header id = "drag-header"> Drag & Drop to Upload File </header>
+        <span> OR </span>
+        <button id="browse">Browse file</button>
+        <input id = "result" type = "file" name = "file" hidden></input>
+        
+    </div>
+    <div class ="upload-form">
+        <button id = "upload_button">Processed </button>
+    </div>
+
+    <script src = "script.js"></script>
+
+</body>
+</html>

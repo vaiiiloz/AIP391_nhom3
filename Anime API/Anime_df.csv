@@ -1,0 +1,172 @@
+Name,Orgin,Gender,IsMain
+Agatsuma Zenitsu,Kimetsu no Yaiba,Male,Yes
+Shinomiya Kaguya,Kaguya-sama wa Kokurasetai,Female,Yes
+Fujiwara Chika,Kaguya-sama wa Kokurasetai,Female,Yes
+Shirogane Miyuki,Kaguya-sama wa Kokurasetai,Male,Yes
+Hayasaka Ai,Kaguya-sama wa Kokurasetai,Female,No
+Iino Miko,Kaguya-sama wa Kokurasetai,Female,Yes
+Ishigami Yuu,Kaguya-sama wa Kokurasetai,Male,Yes
+Shirogane Kei,Kaguya-sama wa Kokurasetai,Female,No
+Uzumaki Naruto,Naruto,Male,Yes
+Uchiha Sasuke,Naruto,Male,Yes
+Haruno Sakura,Naruto,Female,Yes
+Hyuuga Hinata,Naruto,Female,No
+Hatake Kakashi,Naruto,Male,Yes
+Kamado Nezuko,Kimetsu no Yaiba,Female,Yes
+Kamado Tanjirou,Kimetsu no Yaiba,Male,Yes
+Kochou Shinobu,Kimetsu no Yaiba,Female,No
+Tomioka Giyuu,Kimetsu no Yaiba,Male,No
+Kanroji Mitsuri,Kimetsu no Yaiba,Female,No
+Hashibira Inosuke,Kimetsu no Yaiba,Male,Yes
+Rengoku Kyoujurou,Kimetsu no Yaiba,Male,No
+Tsuyuri Kanao,Kimetsu no Yaiba,Female,No
+Tokitou Muichirou,Kimetsu no Yaiba,Male,No
+Iguro Obanai,Kimetsu no Yaiba,Male,No
+Uzui Tengen,Kimetsu no Yaiba,Male,No
+Shinazugawa Sanemi,Kimetsu no Yaiba,Male,No
+Sabito,Kimetsu no Yaiba,Male,No
+Kochou Kanae,Kimetsu no Yaiba,Female,No
+Yuuki Asuna,Sword Art Online,Female,Yes
+Kirigaya Kazuto,Sword Art Online,Male,Yes
+Kirigaya Suguha,Sword Art Online,Female,Yes
+Asada Shino,Sword Art Online,Female,Yes
+Ayano Keiko,Sword Art Online,Female,No
+Alice Schuberg,Sword Art Online,Female,Yes
+Konno Yuuki,Sword Art Online,Female,No
+Sinon,Sword Art Online,Female,Yes
+Eugeo,Sword Art Online,Male,No
+Shinozaki Rika,Sword Art Online,Female,No
+Lyfa,Sword Art Online,Female,Yes
+Yui (Sword Art Online),Sword Art Online,Female,No
+Saber,Fate series,Female,Yes
+Joan of Arc,Fate series,Female,Yes
+Tohsaka Rin,Fate series,Female,Yes
+Shielder,Fate series,Female,Yes
+Joan Alter,Fate series,Female,Yes
+Gilgamesh,Fate series,Male,No
+Matou Sakura,Fate series,Female,Yes
+Caster,Fate series,Female,No
+Lancer,Fate series,Male,No
+Ganyu,Genshin Impact,Female,Game character
+Zhongli,Genshin Impact,Male,Game character
+Keqing,Genshin Impact,Female,Game character
+Hu Tao,Genshin Impact,Female,Game character
+Lumine,Genshin Impact,Female,Game character
+Xiao,Genshin Impact,Male,Game character
+Mona,Genshin Impact,Female,Game character
+Venti,Genshin Impact,Male,Game character
+Diluc,Genshin Impact,Male,Game character
+Eula,Genshin Impact,Female,Game character
+Fischl,Genshin Impact,Female,Game character
+Barbara,Genshin Impact,Female,Game character
+Klee,Genshin Impact,Female,Game character
+Paimon,Genshin Impact,Female,Game character
+Midoriya Izuku,My Hero Academia,Male,Yes
+Bakugou Katsuki,My Hero Academia,Male,Yes
+Todoroki Shouto,My Hero Academia,Male,No
+Uraraka Ochako,My Hero Academia,Female,Yes
+Asui Tsuyu,My Hero Academia,Female,No
+Toga Himiko,My Hero Academia,Female,No
+Kirishima Eijirou,My Hero Academia,Male,No
+Kaminari Denki,My Hero Academia,Male,No
+Jirou Kyouka,My Hero Academia,Female,No
+All Might,My Hero Academia,Male,No
+Aizawa Shouta,My Hero Academia,Male,No
+Iida Tenya,My Hero Academia,Male,Yes
+Tachibana Kanade,Angel Beats,Female,Yes
+Yui (Angel Beats!),Angel Beats,Female,No
+Hinata Hideki,Angel Beats,Male,No
+Nakamura Yuri,Angel Beats,Female,Yes
+Otonashi Yuzuru,Angel Beats,Male,Yes
+Naoi Ayato,Angel Beats,Male,No
+Iwasawa Masami,Angel Beats,Female,No
+Noda,Angel Beats,Male,No
+Shiina Eri,Angel Beats,Female,No
+Ooyama,Angel Beats,Male,No
+Fujimaki,Angel Beats,Male,No
+Yusa,Angel Beats,Female,No
+Sekine Shiori,Angel Beats,Female,No
+TK,Angel Beats,Male,No
+Hisako,Angel Beats,Female,No
+Mikasa Ackerman,Attack on Titan,Female,Yes
+Levi Ackerman,Attack on Titan,Male,No
+Eren Jaeger,Attack on Titan,Male,Yes
+Armin Arlert,Attack on Titan,Male,Yes
+Christa Renz,Attack on Titan,Female,No
+Annie Leonhardt,Attack on Titan,Female,No
+Jean Kirschstein,Attack on Titan,Male,No
+Hange Zoë,Attack on Titan,Female,No
+Reiner Braun,Attack on Titan,Male,No
+Ymir,Attack on Titan,Female,No
+Bertholdt Fubar,Attack on Titan,Male,No
+Yukinoshita Yukino,Yahari Ore no Seishun Love Come wa Machigatteiru,Female,Yes
+Yuigahama Yui,Yahari Ore no Seishun Love Come wa Machigatteiru,Female,Yes
+Isshiki Iroha,Yahari Ore no Seishun Love Come wa Machigatteiru,Female,Yes
+Hikigaya Hachiman,Yahari Ore no Seishun Love Come wa Machigatteiru,Male,Yes
+Hikigaya Komachi,Yahari Ore no Seishun Love Come wa Machigatteiru,Female,No
+Rem,Re:Zero,Female,No
+Emilia,Re:Zero,Female,Yes
+Ram,Re:Zero,Female,No
+Natsuki Subaru,Re:Zero,Male,Yes
+Beatrice,Re:Zero,Female,No
+Felt,Re:Zero,Female,No
+Saitama,One punch man,Male,Yes
+Genos,One punch man,Male,Yes
+Tatsumaki,One punch man,Female,Yes
+Fubuki,One punch man,Female,Yes
+Shiota Nagisa,Ansatsu Kyoushitsu,Male,Yes
+Akabane Karma,Ansatsu Kyoushitsu,Male,Yes
+Kayano Kaede,Ansatsu Kyoushitsu,Female,Yes
+Shiro,No Game No Life,Female,Yes
+Jibril,No Game No Life,Female,Yes
+Sora,No Game No Life,Male,Yes
+Stephanie Dora,No Game No Life,Female,Yes
+Hatsuse Izuna,No Game No Life,Female,Yes
+Gojou Satoru,Jujutsu Kaisen,Male,Yes
+Itadori Yuuji,Jujutsu Kaisen,Male,Yes
+Fushiguro Megumi,Jujutsu Kaisen,Male,Yes
+Getou Suguru,Jujutsu Kaisen,Male,No
+Kugisaki Nobara,Jujutsu Kaisen,Female,Yes
+Sukuna,Jujutsu Kaisen,Male,No
+Tsuchimikado Natsume,Tokyo Ravens,Female,Yes
+Tsuchimikado Harutora,Tokyo Ravens,Male,Yes
+Horikita Suzune,Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e,Female,Yes
+Ichinose Honami,Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e,Female,No
+Ayanokouji Kiyotaka,Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e,Male,Yes
+Karuizawa Kei,Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e,Female,No
+Sakayanagi Arisu,Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e,Female,No
+Priestess,Goblin Slayer,Female,Yes
+Goblin Slayer,Goblin Slayer,Male,Yes
+High Elf Archer,Goblin Slayer,Female,Yes
+Tokisaki Kurumi,Date A Live,Female,Yes
+Yatogami Tohka,Date A Live,Female,No
+Itsuka Kotori,Date A Live,Female,No
+Yoshino,Date A Live,Female,No
+Tobiichi Origami,Date A Live,Female,No
+Itsuka Shidou,Date A Live,Male,Yes
+Izayoi Miku,Date A Live,Female,No
+Yamai Yuzuru,Date A Live,Female,No
+Yamai Kaguya,Date A Live,Female,No
+Kuro Usagi,Mondaiji-tachi ga Isekai kara Kuru Sou Desu yo,Female,Yes
+Sakamaki Izayoi,Mondaiji-tachi ga Isekai kara Kuru Sou Desu yo,Male,Yes
+Kudou Asuka,Mondaiji-tachi ga Isekai kara Kuru Sou Desu yo,Female,Yes
+Kasukabe You,Mondaiji-tachi ga Isekai kara Kuru Sou Desu yo,Female,Yes
+Leticia Drakurea,Mondaiji-tachi ga Isekai kara Kuru Sou Desu yo,Female,No
+Orihara Izaya,DURARARA!!,Male,Yes
+Heiwajima Shizuo,DURARARA!!,Male,Yes
+Kida Masaomi,DURARARA!!,Male,Yes
+Ryuugamine Mikado,DURARARA!!,Male,Yes
+Sonohara Anri,DURARARA!!,Female,Yes
+Kishitani Shinra,DURARARA!!,Male,No
+Kurosaki Ichigo,BLEACH,Male,Yes
+Kuchiki Rukia,BLEACH,Female,Yes
+Inoue Orihime,BLEACH,Female,Yes
+Ulquiorra Schiffer,BLEACH,Male,No
+Hitsugaya Toushirou,BLEACH,Male,No
+Konno Junko,Zombieland Saga,Female,Yes
+Mizuno Ai,Zombieland Saga,Female,Yes
+Minamoto Sakura,Zombieland Saga,Female,Yes
+Nikaidou Saki,Zombieland Saga,Female,Yes
+Hoshikawa Lily,Zombieland Saga,Female,Yes
+Yuugiri,Zombieland Saga,Female,Yes
+Yamada Tae,Zombieland Saga,Female,Yes
