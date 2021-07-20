@@ -10,6 +10,7 @@ def get_image(image_path):
 		img, top1, top5 = pipe.process(image_path)
 	except:
 		pass
+	print('Done')
 	img.save(outputFile)
 
 	info = ''

@@ -21,6 +21,7 @@ def upload_file():
 		f = request.files['file']
 		f.save(app.config['UPLOAD_FILE'])
 		#info = get_image(app.config['UPLOAD_FILE'])
+		info = ''
 		return render_template('upload.html', info = info)
 
 if __name__ == '__main__':
