@@ -40,7 +40,7 @@ class Pipe:
             xmax = row['xmax']
             ymax = row['ymax']
             mask = img.crop((xmin-30, ymin-30, xmax+30, ymax+30))
-            inputs = self.val_aug(mask).unsqueeze_(0)
+            inputs = self.val_aug(mask).unsqueeze_(0).to(self.Models.device)
             outputs = self.Models.recog_model(inputs)
             pre = outputs.topk(5, 1, True, True)[1]
             top5.append([self.labels[i] for i in pre[0].tolist()])
@@ -62,14 +62,12 @@ class Pipe:
             font = ImageFont.truetype("arial.ttf", fontsize)
             text_width, text_height = draw.textsize(name, font = font)
             
-#             if text_width>right-left+10:
-# #                 name = name.replace(' ','\n')
-# #                 text_width, text_height = draw.textsize(name)
-# #             if top-text_height-10<0:
-#                 name = name.split(' ')[0]
-#                 text_width, text_height = draw.textsize(name)
+            if text_width>right-left+10:
+                if len(name.split(' '))>1:
+                    name = name.split(' ')[1]
             draw.rectangle(((left, bottom+text_height+10),(right, bottom)), outline = (0,0,0))
 
+            
             draw.text((left+6,bottom+5),name, fill=(255,0,0,0), font = font)
         return top1, top5
     def create_font(self, txt, img_size, img_fraction = 1):
@@ -82,4 +80,7 @@ class Pipe:
 
         # optionally de-increment to be sure it is less than criteria
         fontsize -= 1
+        if fontsize<15:
+            fontsize = 15
+        
         return fontsize

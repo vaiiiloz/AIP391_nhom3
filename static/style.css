@@ -19,14 +19,15 @@ body
 }
 .upload-form{
 	height: 50px;
-	width: 700px;
+	width: 1200px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	flex-direction: row;
 }
 
 .upload-form input{
-	padding: 10px 25px;
+	padding: 5px 5px;
 	font-size: 20px;
 	font-weight: 500;
 	border: none;

@@ -5,18 +5,18 @@
     <meta charset="utf-8" />
     <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
     <title>Upload</title>
-    <link rel="stylesheet" href="./static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    <p class="text-left">{{ fname }} successfully uploaded.</p>
+    <p class="text-left">./static/detect/{{display_detection}} successfully uploaded.</p>
 
     <div class = "area">
         <div class = "result-section">
             <div class = "image-section">
                 <div class="image-contain">
-                    <img src="/static/detect/{{display_detection}}" class="upload-image-thumb">
+                    <img src="./static/detect/{{display_detection}}">
                 </div>
             </div>
             <div class = "info-section">
@@ -26,8 +26,10 @@
         <div class ="upload-form">
             <form action = "/upload" method="POST" enctype = "multipart/form-data">
                 <p> Upload another?</p>
-                <input class = "result" type = "file" name = "file"></input>
+                
                 <input type = "submit"></input>
+
+                <input class = "result" type = "file" name = "file"></input>
             </form>
         </div>
     </div>

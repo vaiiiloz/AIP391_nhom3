@@ -9,7 +9,7 @@ from app_helper import *
 app = Flask(__name__)
 UPLOAD_FOLDER = r'.\static\upload'
 
-app.config['UPLOAD_FILE'] = UPLOAD_FILE
+app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route("/")
 def index():
@@ -23,8 +23,9 @@ def upload_file():
 		filepath = os.path.join(app.config["UPLOAD_FOLDER"], filename)
 		f.save(filepath)
 		info = get_image(filepath, filename)
+		print(filename)
 		return render_template('upload.html', display_detection = filename, fname = filename, info = info)
 
 if __name__ == '__main__':
 	port = int(os.environ.get('PORT', 5000))
-	app.run(host = '0.0.0.0',port=port,debug = True)
+	app.run(port=port,debug = True)
