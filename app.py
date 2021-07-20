@@ -20,7 +20,7 @@ def upload_file():
 	if request.method == "POST":
 		f = request.files['file']
 		f.save(app.config['UPLOAD_FILE'])
-		info = get_image(app.config['UPLOAD_FILE'])
+		#info = get_image(app.config['UPLOAD_FILE'])
 		return render_template('upload.html', info = info)
 
 if __name__ == '__main__':
