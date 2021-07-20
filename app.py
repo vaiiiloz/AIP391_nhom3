@@ -7,7 +7,7 @@ import sys
 from app_helper import *
 
 app = Flask(__name__)
-UPLOAD_FILE = 'input.jpg'
+UPLOAD_FILE = 'templates\input.jpg'
 
 app.config['UPLOAD_FILE'] = UPLOAD_FILE
 

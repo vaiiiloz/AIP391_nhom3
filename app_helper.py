@@ -2,7 +2,7 @@ from Pipeline import Pipe
 import os
 import pandas as pd
 pipe = Pipe()
-outputFile = "output.jpg"
+outputFile = "templates\output.jpg"
 df = pd.read_csv('Anime_df.csv',encoding='latin-1')
 
 def get_image(image_path):
