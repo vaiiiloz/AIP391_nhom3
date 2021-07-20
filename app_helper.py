@@ -2,16 +2,15 @@ from Pipeline import Pipe
 import os
 import pandas as pd
 pipe = Pipe()
-outputPath = r"\static\detect"
+outputFile = "output.jpg"
 df = pd.read_csv('Anime_df.csv',encoding='latin-1')
-if os.path.exists(outputPath):
-	os.makedirs(outputPath)
-def get_image(image_path, img_name):
+
+def get_image(image_path):
 	try:
 		img, top1, top5 = pipe.process(image_path)
 	except:
 		pass
-	img.save(os.path.join(outputPath, img_name))
+	img.save(outputFile)
 
 	info = ''
 	for name in top1:

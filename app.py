@@ -7,10 +7,9 @@ import sys
 from app_helper import *
 
 app = Flask(__name__)
-UPLOAD_FOLDER = r'\static\upload'
-if os.path.exists(UPLOAD_FOLDER):
-	os.makedirs(UPLOAD_FOLDER)
-app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+UPLOAD_FILE = 'input.jpg'
+
+app.config['UPLOAD_FILE'] = UPLOAD_FILE
 
 @app.route("/")
 def index():
@@ -20,13 +19,9 @@ def index():
 def upload_file():
 	if request.method == "POST":
 		f = request.files['file']
-		filename = secure_filename(f.filename)
-		filepath = os.path.join(app.config["UPLOAD_FOLDER"], filename)
-		if not os.path.exists(filepath):
-			os.mknod(filepath)
-		f.save(filepath)
-		info = get_image(filepath, filename)
-		return render_template('upload.html', display_detection = filename, fname = filename, info = info)
+		f.save(app.config['UPLOAD_FILE'])
+		info = get_image(app.config['UPLOAD_FILE'])
+		return render_template('upload.html', info = info)
 
 if __name__ == '__main__':
 	port = int(os.environ.get('PORT', 5000))
