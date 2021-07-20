@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-    <p class="text-left"> successfully uploaded.</p>
+    <p class="text-left">{{ fname }} successfully uploaded.</p>
 
     <div class = "area">
         <div class = "result-section">
             <div class = "image-section">
                 <div class="image-contain">
-                    <img src="input.jpg" class="upload-image-thumb">
+                    <img src="/static/detect/{{display_detection}}" class="upload-image-thumb">
                 </div>
             </div>
             <div class = "info-section">

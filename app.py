@@ -7,7 +7,7 @@ import sys
 from app_helper import *
 
 app = Flask(__name__)
-UPLOAD_FILE = 'templates\input.jpg'
+UPLOAD_FOLDER = r'.\static\upload'
 
 app.config['UPLOAD_FILE'] = UPLOAD_FILE
 
@@ -19,10 +19,11 @@ def index():
 def upload_file():
 	if request.method == "POST":
 		f = request.files['file']
-		f.save(app.config['UPLOAD_FILE'])
-		#info = get_image(app.config['UPLOAD_FILE'])
-		info = ''
-		return render_template('upload.html', info = info)
+		filename = secure_filename(f.filename)
+		filepath = os.path.join(app.config["UPLOAD_FOLDER"], filename)
+		f.save(filepath)
+		info = get_image(filepath, filename)
+		return render_template('upload.html', display_detection = filename, fname = filename, info = info)
 
 if __name__ == '__main__':
 	port = int(os.environ.get('PORT', 5000))

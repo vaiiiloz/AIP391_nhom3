@@ -2,7 +2,7 @@ from Pipeline import Pipe
 import os
 import pandas as pd
 pipe = Pipe()
-outputFile = "templates\output.jpg"
+outputPath = r".\static\detect"
 df = pd.read_csv('Anime_df.csv',encoding='latin-1')
 
 def get_image(image_path):
@@ -10,8 +10,7 @@ def get_image(image_path):
 		img, top1, top5 = pipe.process(image_path)
 	except:
 		pass
-	print('Done')
-	img.save(outputFile)
+	img.save(os.path.join(outputPath, img_name))
 
 	info = ''
 	for name in top1:
