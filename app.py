@@ -7,8 +7,9 @@ import sys
 from app_helper import *
 
 app = Flask(__name__)
-UPLOAD_FOLDER = r'.\static\upload'
-
+UPLOAD_FOLDER = r'static\upload'
+for filename in os.listdir(UPLOAD_FOLDER):
+	os.remove(os.path.join(UPLOAD_FOLDER, filename))
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route("/")
@@ -27,5 +28,5 @@ def upload_file():
 		return render_template('upload.html', display_detection = filename, fname = filename, info = info)
 
 if __name__ == '__main__':
-	port = int(os.environ.get('PORT', 5000))
-	app.run(port=port,debug = True)
+	#port = int(os.environ.get('PORT', 1000))
+	app.run(host='0.0.0.0',debug = True)
