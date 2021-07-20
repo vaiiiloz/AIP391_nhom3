@@ -40,7 +40,7 @@ class Pipe:
             xmax = row['xmax']
             ymax = row['ymax']
             mask = img.crop((xmin-30, ymin-30, xmax+30, ymax+30))
-            inputs = self.val_aug(mask).unsqueeze_(0).to(self.Models.device)
+            inputs = self.val_aug(mask).unsqueeze_(0)
             outputs = self.Models.recog_model(inputs)
             pre = outputs.topk(5, 1, True, True)[1]
             top5.append([self.labels[i] for i in pre[0].tolist()])
